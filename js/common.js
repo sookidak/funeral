@@ -117,7 +117,9 @@ $(document).ready(function() {
   	//자주하는 질문
   	$qna.find('dt').on('click focus keydown',function() {
   		$qna.find('dt').removeClass('active');
-  		$(this).addClass('active');
+        $qna.find('dd').removeClass('active');
+        $(this).addClass('active');
+        $(this).next().addClass('active');
   	});
 
 
