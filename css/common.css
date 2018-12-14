@@ -251,12 +251,25 @@
 .table th.line{border-right: 1px solid #ddd;}
 .table td{font-size: 14px;line-height: 20px; font-family: 'NotoKrL'; text-align: center; font-weight: normal; color: #777777;  padding: 10px 20px ; border-right: 0; border-left: 1px solid #eee; border-bottom: 1px solid #eee; border-top: 0; background-color:#fff;  height: 60px;}
 .table td.line{border-left: 1px solid #eee !important;}
+.table .btn-down{border:1px solid #aaaaaa; border-radius:2px; padding: 0 10px;line-height:26px; color:#777777;font-size: 13px; vertical-align: text-top}
+.table .btn-down:before{content:'';display: inline-block;width:15px; height:15px;background:url('../img/ic_download.png') 0 bottom no-repeat; }
 
 /* table - table-type1 */
 .table.table-type1 tbody th{  border-top: 0;border-bottom: 1px solid #eee;  }
 .table.table-type1 tbody th:first-child{ border-right: 1px solid #ddd; }
 .table.table-type1 thead tr:first-child th{border-top: 2px solid #bbb;}
 .table.table-type1 .text-style7:first-child{margin-top: 0px;}
+
+
+/* table -  table-type2 */
+.table.table-type2{border-collapse:collapse !important;  }
+.table.table-type2 th{ border-right:0; border-left:0 ; border:0; border-bottom: 1px solid #eee;} 
+.table.table-type2.textL td{text-align: left;}
+.table.table-type2 tr:first-child td, .table.table-type2 tr:first-child th{ border-left: 0 ;  border-top: 2px solid #bbb;}
+.table.table-type2 td:nth-child(2) {border-left: 0}
+.table.table-type2 td.acc{color:#333;}
+.table.table-type2 ul li{font-size: 14px;}
+
 
 /* table - 고인검색 */
 .table.deceased td{ padding: 22px 20px ;}
