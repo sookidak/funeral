@@ -1,11 +1,11 @@
 function GNB_on(){
-	$(".nav-bg").stop().slideDown(function(){
+	$(".nav-bg").stop().slideDown("fast",function(){
 	$('.gnb').addClass('active');
 	});
 }
 function GNB_off(){
 	$('.gnb').removeClass('active');
-	$(".nav-bg").stop().slideUp();
+	$(".nav-bg").stop().slideUp("fast");
 	$('.gnb li').removeClass('active');
 }
 
@@ -18,7 +18,7 @@ $(document).ready(function() {
 	$topWrap=$(".top-wrap"),
 	$mainWrap=$(".main-wrap"),
 	$opensectionWrap=$(".opensection-wrap"),
-	$container=$(".container"),
+	$container=$("#container"),
 	$gnb2depth=$(".gnb-2depth a"),
 	$gnb3Wrap=$(".gnb3-wrap"),
 	$gnb=$(".gnb"),
@@ -26,6 +26,7 @@ $(document).ready(function() {
 	$tablist2=$(".tablist-type2"),
 	$qna=$(".qna"),
 	$location=$(".location-nav-wrap");
+    $lang=$(".lang");
 
 	var allBtnNum = 0;	//전체메뉴 기본 설정값
 
@@ -39,6 +40,21 @@ $(document).ready(function() {
 			return false;
 		}
 	}
+    
+    //메인 슬라이드 적용
+	$('#slider').bxSlider({
+		auto: true,
+		autoControls: true
+	});
+       //메인 슬라이드 적용
+	if ($('#deceased table').length > 1){
+        $('#deceased').bxSlider({
+		auto: true,
+		autoControls: true
+	});
+        
+    }
+    
     
     //gnb
 	$gnb.find('li > a').mouseover(function(){		
@@ -64,6 +80,14 @@ $(document).ready(function() {
 		$(this).addClass('active');
 	});
 	$location.on('blur mouseleave', function(event) {
+		$(this).find('a').removeClass('active');
+	});
+    
+    //외국어 이벤트
+	$lang.find('a').on('focus mouseenter', function(event) {
+		$(this).addClass('active');
+	});
+	$lang.on('blur mouseleave', function(event) {
 		$(this).find('a').removeClass('active');
 	});
 
@@ -115,13 +139,14 @@ $(document).ready(function() {
 
 
   	//자주하는 질문
-  	$qna.find('dt').on('click focus keydown',function() {
+  	$qna.find('button').on('click focus keydown',function() {
   		$qna.find('dt').removeClass('active');
         $qna.find('dd').removeClass('active');
-        $(this).addClass('active');
-        $(this).next().addClass('active');
+        $(this).parent().addClass('active');
+        $(this).parent().next().addClass('active');
   	});
 
+    
 
 	//진료과 목록  아이콘 노출 
 	$('.text-ko > a').on('focus',function(){
