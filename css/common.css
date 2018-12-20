@@ -57,14 +57,16 @@
 .gnb li{float:left;color:#000;font-size:18px;font-family: 'NotoKrM',sans-serif; text-align: center;min-width:95px; margin-left:60px;position: relative;}
 .gnb li:first-child{margin-left:0;}
 .gnb li a{display:block;line-height:90px;height:90px;position:relative}
-.gnb li a:hover,.gnb li a.active{color:#0770bb}
+.gnb li a:hover,.gnb li.active a{color:#0770bb}
 .gnb li a:hover:after,.gnb li.active a:after{content:'';display:inline-block;position:absolute;left:0;bottom:0;right:0;height:4px;background: #0770bb}
 
 .gnb li ul{position:absolute; left: 0px; top:90px; z-index: 999; padding-top: 17px;display: none; }
 .gnb li ul li{float: none;margin-left:0px;padding: 2px 0px;}
 .gnb li ul li a{font-size:16px; line-height: 18px; padding: 8px 0px;height: auto;font-family:'NotoKrL',sans-serif;color:#333; }
+.gnb li.active ul li a{color:#333; }
 .gnb li ul li a:hover:after,.gnb li.active ul li a:after{content:'';display:none;}
 .gnb li ul li a:hover{background:#0770bb;color:#fff;font-family: 'NotoKrM'}
+
 
 .nav-wrap .nav-bg{width:100%;background:#ffffff;height:220px;box-shadow: 0px 8px 13px rgba(0,0,0,0.3); position: absolute; top:90px; z-index:998;display: none;}
 
