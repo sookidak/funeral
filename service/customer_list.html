@@ -10,20 +10,24 @@
         <div class="board-wrap">
             <!-- board search box -->
             <div class="search-box">
-                <label>
-                    <select id="" name="">
-                        <option>구분 전체</option>
-                        <option value="">A-1</option>
-                        <option value="">A-2</option>
-                    </select>
-                </label>
-                <label>
-                    <select id="" name="">
-                        <option>유형 전체</option>
-                        <option value="">B-1</option>
-                        <option value="">B-2</option>
-                    </select>
-                </label>
+				<!-- category  -->
+				<div class="select">					
+					<label for="selector">선택지1</label>
+					<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" >    
+						<option lang="ko" value="1" role="menuitem">선택지1</option>	    
+						<option lang="ko" value="2" role="menuitem">선택지2</option>	  
+					</select>			
+				</div>
+				<!-- //category  -->
+				<!-- category  -->
+				<div class="select">
+					<label for="selector2">선택지1</label>
+					<select id="selector2" class="" aria-haspopup="true" aria-controls="select-menu" >    
+						<option lang="ko" value="1" role="menuitem">선택지1</option>	    
+						<option lang="ko" value="2" role="menuitem">선택지2</option>	  
+					</select>	
+				</div>
+				<!-- //category  -->	
                 <label><input type="text" id="" placeholder="찾으시는 검색어를 입력해주세요." /></label>
                 <button type="button" class="btn">검색</button>
             </div>
