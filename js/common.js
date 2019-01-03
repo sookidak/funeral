@@ -40,6 +40,11 @@ $(document).ready(function() {
 			return false;
 		}
 	}
+    	//메인 탑 버튼 숨기기
+	if (mainCheck()) {
+		$('.footer .top-btn').hide();
+
+	}
     
     //메인 슬라이드 적용
 	$('#slider').bxSlider({
