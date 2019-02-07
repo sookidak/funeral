@@ -54,9 +54,9 @@
 .nav-wrap h1 a{font-size: 18px; color:#0082b6; font-family: 'NotoKrM',sans-serif; font-weight: normal; display: block; padding-left: 180px; height: 43px;position: relative;padding-top: 11px;}
 .nav-wrap h1 a:before{content: '';display: block;width: 1px;height: 20px;background: #0082b6;position: absolute;top: 11px;left:163px;}
 .nav-wrap h1 a:after{content: '';display: block;width: 145px;height: 43px;background:url(../img/icon_header.png) left top no-repeat;position: absolute;top: 0px;left:0px;}
-.gnb li{float:left;color:#000;font-size:18px;font-family: 'NotoKrM',sans-serif; text-align: center;min-width:95px; margin-left:60px;position: relative;}
+.gnb li{float:left;color:#000;font-size:18px;font-family: 'NotoKrM',sans-serif; text-align: center;min-width:95px;position: relative;}
 .gnb li:first-child{margin-left:0;}
-.gnb li a{display:block;line-height:90px;height:90px;position:relative}
+.gnb li a{display:block;line-height:90px;height:90px;position:relative; width: 150px;}
 .gnb li a:hover,.gnb li.active a{color:#0770bb}
 .gnb li a:hover:after,.gnb li.active a:after{content:'';display:inline-block;position:absolute;left:0;bottom:0;right:0;height:4px;background: #0770bb}
 
