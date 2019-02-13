@@ -100,10 +100,13 @@ $(document).ready(function() {
 	// 탭 갯수가 6개 이하일때 넓이 조절 이하일때 조절바 노출
 	var tapN = $tablist1.find('a').length;
 	if (tapN < 6) {
-		var tapW = 1180/tapN;
-		$tablist1.find('a').css( 'width', tapW+'px' );
+		//var tapW = 1180/tapN;
+		//$tablist1.find('a').css( 'width', tapW+'px' );
 	}else if(tapN > 6){
-		$(".scroll-btn").addClass('active')
+		for (i = 0; i < tapN/4; i++) {
+			var j = i*4;
+			$tablist1.find('a').slice(j, j+4).wrapAll("<div class='br'></div>");			
+		}
 	}
 
 

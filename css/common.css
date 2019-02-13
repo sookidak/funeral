@@ -206,18 +206,18 @@
 
 /* tab */
 .tab-wrap{position:relative;}
-.tablist-type1{width:1180px;display:block;margin-bottom:60px;height: 60px; overflow : hidden; white-space:nowrap; letter-spacing: -4px; }
-.tablist-type1 a{display: inline-block;text-align:center;height:60px;color:#000;font-size:16px; line-height: 60px; padding:0 55px; min-width:196px; border:1px solid #dddddd;border-left:0px; letter-spacing: -1px; }
+.tablist-type1{width:1180px;display:table;margin-bottom:60px;height: 60px; overflow : hidden; white-space:nowrap; letter-spacing: -4px; }
+.tablist-type1 .br{display: table-row}
+.tablist-type1 a{display:table-cell;text-align:center;height:60px;color:#000;font-size:16px; line-height: 60px; padding:0 55px; min-width:196px; border:1px solid #dddddd;border-left:0px; letter-spacing: -1px; }
 .tablist-type1 a:first-child{border-left:1px solid #dddddd;}
 .tablist-type1 a.active{position:relative; background:#0770bb; border:1px solid #0770bb;color:#fff;font-family:'NotoKrR',sans-serif;}
 
-.tablist-type1.line2{height: 120px;white-space:normal;}
+.tablist-type1.line2{white-space:normal;}
 .tablist-type1.line2 a{min-width:295px; }
 
 .tab-wrap .tabpanel, .tab-wrap .tabpanel-sub{display: none}
 .tab-wrap .tabpanel.active, .tab-wrap .tabpanel-sub.active{display: block;}
-.tablist-type1.line2 a:nth-child(n+5){border-top:0px;}
-.tablist-type1.line2 a:nth-child(5){border-left:1px solid #dddddd;}
+.tablist-type1 .br:nth-child(n+2) a{border-top:0px;}
 
 /* 문단 단위 */
 .prg-wrap{border-top:1px solid #ddd;padding-top:40px;padding-bottom:78px;}
@@ -322,6 +322,7 @@ input[type=text], input[type=password]{line-height:normal; border: 1px solid #dd
 label.hide{position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
 input[type=text]:disabled, input[type=password]:disabled{ border: 1px solid #eee; color: #777; background: #f8f8f8; }
 input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; color: #000; }
+input[readonly]{border: 1px solid #eee !important; color: #777 !important; background: #f8f8f8 !important;}
 
 .select { position: relative; width: 200px; z-index: 1; height: 40px; font-size: 14px; font-weight:normal;  font-family: 'NotoKrL'; color: #777; display: inline-block;} 
 .select label { position: absolute; top: 0px; left: 0px; width: 100%; z-index: -1;line-height:normal; border: 1px solid #ddd;  background: url(../img/icon_components_select_off.png) no-repeat right center #fff; height: 100%; padding: 0 20px; -webkit-appearance: none; -moz-appearance: none;  appearance: none; text-align: left; padding-right:40px; border-radius: 0 ;  vertical-align: middle; line-height:38px;} 
