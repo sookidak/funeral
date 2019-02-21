@@ -54,24 +54,29 @@
 .nav-wrap h1 a{font-size: 18px; color:#0082b6; font-family: 'NotoKrM',sans-serif; font-weight: normal; display: block; padding-left: 180px; height: 43px;position: relative;padding-top: 11px;}
 .nav-wrap h1 a:before{content: '';display: block;width: 1px;height: 20px;background: #0082b6;position: absolute;top: 11px;left:163px;}
 .nav-wrap h1 a:after{content: '';display: block;width: 145px;height: 43px;background:url(../img/icon_header.png) left top no-repeat;position: absolute;top: 0px;left:0px;}
-.gnb li{float:left;color:#000;font-size:18px;font-family: 'NotoKrM',sans-serif; text-align: center;min-width:95px;position: relative;}
+.gnb li{float:left;color:#000;font-size:18px;font-family: 'NotoKrM',sans-serif;text-align: center;}
 .gnb li:first-child{margin-left:0;}
-.gnb li a{display:block;line-height:90px;height:90px;position:relative; width: 150px;}
-.gnb li a:hover,.gnb li.active a{color:#0770bb}
-.gnb li a:hover:after,.gnb li.active a:after{content:'';display:inline-block;position:absolute;left:0;bottom:0;right:0;height:4px;background: #0770bb}
-
-.gnb li ul{position:absolute; left: 0px; top:90px; z-index: 999; padding-top: 17px;display: none; }
-.gnb li ul li{float: none;margin-left:0px;padding: 2px 0px;}
-.gnb li ul li a{font-size:16px; line-height: 18px; padding: 8px 0px;height: auto;font-family:'NotoKrL',sans-serif;color:#333; }
-.gnb li.active ul li a{color:#333; }
-.gnb li ul li a:hover:after,.gnb li.active ul li a:after{content:'';display:none;}
-.gnb li ul li a:hover{background:#0770bb;color:#fff;font-family: 'NotoKrM'}
+.gnb li a{display:block;line-height:90px;height:90px;position:relative; width: 150px}
+.gnb li a:hover,.gnb li a.active{color:#0770bb}
+.gnb li a:hover:after,.gnb li a.active:after{content:'';display:inline-block;position:absolute;left:0;bottom:0;right:0;height:4px;background: #0770bb}
 
 
-.nav-wrap .nav-bg{width:100%;background:#ffffff;height:220px;box-shadow: 0px 8px 13px rgba(0,0,0,0.3); position: absolute; top:90px; z-index:998;display: none;}
+/* header - 열린부분 */
+.opensection-wrap.active{display:block;}
+.opensection-wrap{position:absolute;left:0;top:90px;right:0;background:#fff;z-index:999;display:none; box-shadow:  0 5px 10px rgba(0,0,0,0.3); z-index: 100}
+.subnav-wrap .common-layout{}
+.opensection-nav{float: right; position: relative;}
+.gnb2-wrap{position:relative;float:left;width:150px;height:280px;padding-top:32px;text-align: center;}
+.gnb-2depth{font-size:16px;color:#333333}
+.gnb-2depth>li> a{line-height:36px;display:block;position: relative;}
+.gnb-2depth> li> a:hover,.gnb-2depth >li>a.active{background:#0770bb;color:#fff;font-family: 'NotoKrM'}
+.gnb-2depth> li> a:hover+.gnb3-wrap,.gnb-2depth >li>a.active+.gnb3-wrap{display:block;}
+.gnb-2depth >li >a.has-depth:hover:after,.gnb-2depth >li >a.has-depth.active:after{content:'';display:inline-block;position:absolute;right:10px;top:50%;margin-top:-6.5px;width:8px;height:13px;background:url('../img/icon_header.png') -80px -100px no-repeat;z-index:1000;}
 
-.nav-wrap .nav-bg.active{display:block;}
-.gnb.active li ul{display:block;}
+.gnb3-wrap{position:absolute;left:150px;top:-1px;bottom:-1px;right:-1px;padding-top:30px;background:#0770bb;width:150px;z-index:1000;color:#fff;display:none;}
+.gnb-3depth li a{font-size:16px;color:#fff;line-height:36px;font-family: 'NotoKrDL';}
+.gnb-3depth li a:hover,.gnb-3depth li a.active{border-bottom:1px solid #fff;}
+
 
 /* header-loaction */
 .location-wrap{height:60px;background: #f8f8f8;border-bottom:1px solid #eeeeee;}
@@ -215,9 +220,13 @@
 .tablist-type1.line2{white-space:normal;}
 .tablist-type1.line2 a{min-width:295px; }
 
-.tab-wrap .tabpanel, .tab-wrap .tabpanel-sub{display: none}
+.tab-wrap .tabpanel, .tab-wrap .tabpanel-sub{display: none; }
+.tab-wrap .tabpanel:focus, .tab-wrap .tabpanel-sub:focus {  outline: none;}
 .tab-wrap .tabpanel.active, .tab-wrap .tabpanel-sub.active{display: block;}
-.tablist-type1 .br:nth-child(n+2) a{border-top:0px;}
+.tablist-type2{margin-bottom:60px;}
+.tablist-type2:after{content:'';display:block;clear:both;}
+.tablist-type2 a{float:left;padding:0 20px 15px;color:#777;font-size:18px;border-bottom:1px solid #ddd}
+.tablist-type2 a.active{color:#0770bb;border-bottom:2px solid #0770bb;font-family:'NotoKrR',sans-serif;}
 
 /* 문단 단위 */
 .prg-wrap{border-top:1px solid #ddd;padding-top:40px;padding-bottom:78px;}
