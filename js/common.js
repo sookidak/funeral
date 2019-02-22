@@ -15,6 +15,7 @@ $(document).ready(function () {
 		$tablist1 = $(".tablist-type1"),
 		$tablist2 = $(".tablist-type2"),
 		$qna = $(".qna"),
+		$faq = $(".faq"),
 		$location = $(".location-nav-wrap"),
 		$lang = $(".lang");
 
@@ -164,6 +165,16 @@ $(document).ready(function () {
 		$qna.find('dd').removeClass('active');
 		$(this).parent().addClass('active');
 		$(this).parent().next().addClass('active');
+	});
+
+	//faq
+	$faq.find('dt').on('click focus keydown', function () {
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+		} else {
+			$faq.find('dt').removeClass('active');
+			$(this).addClass('active');
+		}
 	});
 
 

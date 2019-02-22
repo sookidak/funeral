@@ -488,16 +488,17 @@ ul.bxslider {  list-style: none;}
 .qna dd.active{display: block;}
 
 /* faq */
-.qna.faq{font-size: 16px; line-height: 22px; border-top: 2px solid #bbbbbb; }
-.qna.faq button{padding:27px 100px; }
-.qna.faq dt{display: block;position: relative; color: #000;  border-bottom: 1px solid #eeeeee; cursor: pointer;}
-.qna.faq dt:before{content:''; display: block; width:14px ;height: 20px;background:url('../img/icon_components.png') -2px -127px no-repeat;position: absolute;top:30px;left:30px ; }
-.qna.faq dt:after{content:''; display: block; width:20px;height: 11px;background:url('../img/icon_components.png') -24px -127px no-repeat;position: absolute;top:30px;right:30px ; }
-.qna.faq dt.active button{color: #0770bb;}
-.qna.faq dt.active:after{background-position:-24px -142px}
-.qna.faq dd{background: #f6f6f6; padding:27px 100px;color: #777 ;position: relative;border-bottom: 1px solid #eeeeee;}
-.qna.faq dd:before{content:''; display: block; width:14px ;height: 20px;background:url('../img/icon_components.png') -2px -147px no-repeat;position: absolute;top:30px;left: 30px;}
+.faq{font-size: 16px; line-height: 22px; border-top: 2px solid #bbbbbb;  margin-top: 15px;}
+.faq button{font-size: 16px;padding:27px 100px; width: 100%; text-align: left;  font-family: 'NotoKrR';}
+.faq dt{display: block;position: relative; color: #000;  border-bottom: 1px solid #eeeeee; cursor: pointer;}
+.faq dt:before{content:''; display: block; width:14px ;height: 20px;background:url('../img/icon_components.png') -2px -127px no-repeat;position: absolute;top:30px;left:30px ;}
+.faq dt:after{content:''; display: block; width:20px ;height: 11px;background:url('../img/icon_components.png')  -24px -127px no-repeat;position: absolute;top:30px;right:30px;pointer-events:none;}
+.faq dt.active button{color: #0770bb;}
+.faq dt.active:after{background-position:-24px -142px}
+.faq dd{background: #f6f6f6; padding:27px 100px;color: #777 ;position: relative;border-bottom: 1px solid #eeeeee;word-break:keep-all;}
+.faq dd:before{content:''; display: block; width:14px ;height: 20px;background:url('../img/icon_components.png') -2px -147px no-repeat;position: absolute;top:50%;left: 30px; transform: translateY(-50%)}
 .Accordion-panel[hidden] { display: none;}
+
 
 /* 이용약관 및 개인정보 */
 .agree-text {color: #777; letter-spacing: -1px; word-break: keep-all;}
