@@ -159,16 +159,22 @@ $(document).ready(function () {
 	}
 
 
+
 	//자주하는 질문
-	$qna.find('button').on('click focus keydown', function () {
-		$qna.find('dt').removeClass('active');
-		$qna.find('dd').removeClass('active');
-		$(this).parent().addClass('active');
-		$(this).parent().next().addClass('active');
+	$qna.find('button').on('click', function () {
+		if ($(this).parent("dt").hasClass('active')) {
+			$(this).parent("dt").removeClass('active');
+			$(this).parent("dt").next().removeClass('active');
+		} else {
+			$qna.find('dt').removeClass('active');
+			$qna.find('dd').removeClass('active');
+			$(this).parent("dt").addClass('active');
+			$(this).parent("dt").next().addClass('active');
+		}
 	});
 
 	//faq
-	$faq.find('dt').on('click focus keydown', function () {
+	$faq.find('dt').on('click', function () {
 		if ($(this).hasClass('active')) {
 			$(this).removeClass('active');
 		} else {
