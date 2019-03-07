@@ -74,7 +74,7 @@
 .gnb-2depth >li >a.has-depth:hover:after,.gnb-2depth >li >a.has-depth.active:after{content:'';display:inline-block;position:absolute;right:10px;top:50%;margin-top:-6.5px;width:8px;height:13px;background:url('../img/icon_header.png') -80px -100px no-repeat;z-index:1000;}
 
 .gnb3-wrap{position:absolute;left:150px;top:-1px;bottom:-1px;right:-1px;padding-top:30px;background:#0770bb;width:150px;z-index:1000;color:#fff;display:none;}
-.gnb-3depth li a{font-size:16px;color:#fff;line-height:36px;font-family: 'NotoKrDL';}
+.gnb-3depth li a{font-size:16px;color:#fff;line-height:36px;font-family:  'NotoKrR';}
 .gnb-3depth li a:hover,.gnb-3depth li a.active{border-bottom:1px solid #fff;}
 
 
@@ -149,7 +149,7 @@
 .clear-both{clear: both;}
 
 .NotoKrL {font-family: 'NotoKrL',sans-serif ; }
-.NotoKrDL {font-family: 'NotoKrDL',sans-serif;}
+.NotoKrDL {font-family:  'NotoKrR',sans-serif;}
 .NotoKrR {font-family: 'NotoKrR',sans-serif; }
 .NotoKrM {font-family: 'NotoKrM',sans-serif; }
 .NotoKrB {font-family: 'NotoKrB',sans-serif; }
@@ -250,6 +250,7 @@
 .step-list.step07 li{width:167px;background-position: 152px 20px; margin-bottom:20px;}
 .step-list.step07 li p{background: url('../img/step_list_box2.png') 0 0 no-repeat;height:185px;}
 .step-list li.step-last{width:150px;}
+.hanmon{font-family: 'Dotum' !important; display: inline-block !important; color:inherit !important; margin-bottom:0 !important}
 
 /* 절차2 */
 .box-table{ width: 100%;}
