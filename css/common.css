@@ -413,7 +413,7 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .main-wrap{background-color:#f2f2f2;width:100%;}
 .main{width:1180px; margin: 0 auto; padding:60px 0;}
 .main:after{content:'';display: block; clear: both;}
-.main .main-lolling{width:680px; height:680px; margin-right: 20px; float:left;position: relative;}
+.main .main-lolling{width:680px; height:680px; margin-right: 20px; float:left;position: relative;overflow: hidden;}
 .main .main-lolling .main-bg{width:680px; height:680px;}
 .main .main-lolling .main-bg div{width:680px; height:680px;}
 
